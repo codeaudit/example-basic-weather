@@ -1,5 +1,5 @@
 # Umbrella
-A simple weather bot built with [Init.ai](https://init.ai). This project is based on the [What's the Weather?](https://docs.init.ai/tutorials/tutorial-02.html) tutorial.
+A sample project built with [Init.ai](https://init.ai). This is based on the [What's the Weather?](https://docs.init.ai/tutorials/tutorial-02.html) tutorial.
 
 Make sure to read the [Getting Started guide](https://docs.init.ai/basics/getting_started.html) to familiarize yourself with the Init.ai platform.
 
