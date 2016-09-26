@@ -13,33 +13,6 @@ const firstOfEntityRole = function(message, entity, role) {
 }
 
 exports.handle = function handle(client) {
-  const sayHello = client.createStep({
-    satisfied() {
-      return Boolean(client.getConversationState().helloSent)
-    },
-
-    prompt() {
-      client.addTextResponse('Hello world!')
-      client.addTextResponse('I don\'t know much yet, but if you need some pointers on where to get started you should check out the docs – http://alphadocs.init.ai/?key=c0fb-addc-119f')
-      client.addTextResponse('Otherwise, head over to Teach (up at the top) and start teaching me!')
-      client.updateConversationState({
-        helloSent: true
-      })
-      client.done()
-    }
-  })
-
-  const untrained = client.createStep({
-    satisfied() {
-      return false
-    },
-
-    prompt() {
-      client.addTextResponse('Apologies, but this app needs to go back to school!')
-      client.done()
-    },
-  })
-
   const collectCity = client.createStep({
     satisfied() {
       return Boolean(client.getConversationState().weatherCity)
@@ -99,7 +72,6 @@ exports.handle = function handle(client) {
     classifications: {},
     streams: {
       main: 'getWeather',
-      hi: [sayHello],
       getWeather: [collectCity, provideWeather],
     }
   })

@@ -11,5 +11,7 @@ Make sure to read the [Getting Started guide](https://docs.init.ai/basics/gettin
 4. Run `npm install` to install dependencies
 5. Commit and push changes
 6. Go to the project in the Init.ai console
+7. Add your openweather.org API key to
+   `behavior/scripts/lib/getCurrentWeather.js`
 7. When the language model is trained and deployed, navigate to Chat and start chatting
 8. Hack away!
