@@ -1,12 +1,17 @@
 {
-  "name": "tutorial-02",
+  "name": "{{.RepositoryName}}",
   "version": "0.0.0",
+  "description": "{{.ProjectDescription}}",
   "main": "behavior/scripts/index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "initai-dev-server"
+  },
+  "author": "{{.UserName}} <{{.UserEmail}}>",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "initai-node": "https://gitlab.com/init-devs/node-client/repository/archive.tar.gz?ref=master",
+    "initai-dev-server": "^0.4.3",
+    "initai-node": "~0.0.6",
     "request": "^2.74.0"
   }
 }

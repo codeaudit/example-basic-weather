@@ -1,17 +1,34 @@
-# What's the weather?
+# {{.ProjectName}} &mdash; What's the weather?
 A sample project built with [Init.ai](https://init.ai). This is based on the [What's the Weather?](https://docs.init.ai/tutorials/tutorial-02.html) tutorial.
 
 Make sure to read the [Getting Started guide](https://docs.init.ai/basics/getting_started.html) to familiarize yourself with the Init.ai platform.
 
-## Usage
+## Development
 
-1. Create a new project in the [Init.ai Console](https://console.init.ai/#/create-project)
-2. Fork or download this repo
-3. Copy its contents and replace your new project contents with the contents of this repo. Be sure to copy all files including the init.yaml and package.json.
-4. Run `npm install` to install dependencies
-5. Commit and push changes
-6. Go to the project in the Init.ai console
-7. Add your openweather.org API key to
-   `behavior/scripts/lib/getCurrentWeather.js`
-7. When the language model is trained and deployed, navigate to Chat and start chatting
-8. Hack away!
+See the [docs](http://docs.init.ai/reference/dev-server.html) for details on setting up the Dev Server.
+
+### Installation
+
+#### Node.js version
+
+To [run your scripts locally](https://docs.init.ai/reference/dev-server.html#local-testing), you should make sure to use Node.js version `4.3.2`.
+
+We recommend using [nvm](https://github.com/creationix/nvm) to easily manage Node.js versions on your machine. This project is pre-provisioned with an `.nvmrc` file so you may simply run:
+
+```bash
+$ nvm use
+```
+
+#### Install dependencies
+
+```bash
+$ npm i
+```
+
+### Usage
+
+#### Start the Dev Server
+
+```bash
+$ npm start
+```
