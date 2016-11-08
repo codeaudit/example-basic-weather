@@ -1,7 +1,7 @@
 # {{.ProjectName}} &mdash; What's the weather?
 A sample project built with [Init.ai](https://init.ai). This is based on the [What's the Weather?](http://docs.init.ai/docs/tutorial-2-basic-weather-app) tutorial.
 
-Make sure to read the [Getting Started guide](https://docs.init.ai/basics/getting_started.html) to familiarize yourself with the Init.ai platform.
+Make sure to read the [Overview](http://docs.init.ai/docs) to familiarize yourself with the Init.ai platform.
 
 ## Development
 
