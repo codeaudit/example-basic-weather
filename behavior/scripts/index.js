@@ -29,7 +29,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      client.addResponse('app:response:name:prompt/weather_city')
+      client.addResponse('prompt/weather_city')
       client.done()
     },
   })
@@ -61,7 +61,7 @@ exports.handle = function handle(client) {
         }
 
         console.log('sending real weather:', weatherData)
-        client.addResponse('app:response:name:provide_weather/current', weatherData)
+        client.addResponse('provide_weather/current', weatherData)
         client.done()
 
         callback()
