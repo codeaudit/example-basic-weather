@@ -10,8 +10,8 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "initai-dev-server": "^0.4.3",
-    "initai-node": "~0.0.6",
+    "initai-dev-server": "^0.4.8",
+    "initai-node": "~0.0.7",
     "request": "^2.74.0"
   }
 }
