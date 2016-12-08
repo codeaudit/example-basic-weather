@@ -1,2 +1,3 @@
 init_version: {{.DefaultLogicVersion}}
 app_name: {{.ProjectName}}
+split_messages: {{.SplitMessages}}
