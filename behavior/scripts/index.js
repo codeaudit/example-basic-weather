@@ -2,16 +2,6 @@
 
 const getCurrentWeather = require('./lib/getCurrentWeather')
 
-const firstOfEntityRole = function(message, entity, role) {
-  role = role || 'generic';
-
-  const slots = message.slots
-  const entityValues = message.slots[entity]
-  const valsForRole = entityValues ? entityValues.values_by_role[role] : null
-
-  return valsForRole ? valsForRole[0] : null
-}
-
 exports.handle = function handle(client) {
   const collectCity = client.createStep({
     satisfied() {
@@ -19,7 +9,7 @@ exports.handle = function handle(client) {
     },
 
     extractInfo() {
-     const city = firstOfEntityRole(client.getMessagePart(), 'city')
+     const city = client.getFirstEntityWithRole(client.getMessagePart(), 'city')
       if (city) {
         client.updateConversationState({
           weatherCity: city,
